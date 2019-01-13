@@ -91,16 +91,6 @@ node .utilities/monitor/local_monitor.js
 
 printf "\n####### RESTFUL-BOOKER-PLATFORM #######
 ####                               ####
-####    RUNNING E2E CHECKS         ####
-####                               ####
-#######################################\n"
-
-cd end-to-end-tests
-
-mvn clean test
-
-printf "\n####### RESTFUL-BOOKER-PLATFORM #######
-####                               ####
 ####      APPLICATION READY        ####
 ####                               ####
 ####         Available at:         ####

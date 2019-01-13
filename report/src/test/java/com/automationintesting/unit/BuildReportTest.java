@@ -6,6 +6,7 @@ import model.room.Rooms;
 import org.approvaltests.Approvals;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.springframework.http.ResponseEntity;
 import requests.RoomRequests;
 
@@ -32,7 +33,7 @@ public class BuildReportTest {
         Approvals.verify(roomSearchResults.getBody().getRooms().toString());
     }
 
-    @Test
+    @Ignore @Test
     public void testGettingBookingsSearchResults(){
         roomApi.stubFor(get("/room/1")
                 .willReturn(

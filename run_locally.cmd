@@ -114,17 +114,6 @@ call node .utilities/monitor/local_monitor.js
 echo:
 echo ####### RESTFUL-BOOKER-PLATFORM #######
 echo ####                               ####
-echo ####    RUNNING E2E CHECKS         ####
-echo ####                               ####
-echo #######################################
-
-cd end-to-end-tests
-
-call mvn clean test
-
-echo:
-echo ####### RESTFUL-BOOKER-PLATFORM #######
-echo ####                               ####
 echo ####      APPLICATION READY        ####
 echo ####                               ####
 echo ####         Available at:         ####
